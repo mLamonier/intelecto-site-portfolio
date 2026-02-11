@@ -114,7 +114,6 @@ portfolio/
   api/                        # API (roteamento, controllers, services)
   includes/                   # utilitários compartilhados (site, csrf, mailer)
   frontend/                   # SPA React + Vite
-  homologacao-pagbank/        # anexos e material de homologação
   login.php
   register.php
   forgot-password.php
