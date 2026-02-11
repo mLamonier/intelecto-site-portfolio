@@ -2,6 +2,8 @@
 
 Plataforma full stack para captação, venda e gestão de cursos profissionalizantes.
 
+[https://cursosintelecto.com.br](https://cursosintelecto.com.br)
+
 Este projeto cobre o fluxo completo: vitrine pública, montagem de grade personalizada, checkout com PagBank (PIX/Boleto/Cartão), área do aluno, painel administrativo e API própria.
 
 ## Stack usada (exatamente no projeto)
