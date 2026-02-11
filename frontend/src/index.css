@@ -1,0 +1,54 @@
+:root {
+  --container-max: 1100px;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+  --bg-white-pattern: image-set(
+    url("/assets/responsive/background-branco-36e5731048-w1600.avif")
+      type("image/avif"),
+    url("/assets/responsive/background-branco-36e5731048-w1600.webp")
+      type("image/webp"),
+    url("/assets/background branco.png") type("image/png")
+  );
+  --bg-red-pattern: image-set(
+    url("/assets/responsive/background-vermelho-d74db704db-w1600.avif")
+      type("image/avif"),
+    url("/assets/responsive/background-vermelho-d74db704db-w1600.webp")
+      type("image/webp"),
+    url("/assets/background vermelho.png") type("image/png")
+  );
+}
+
+* {
+  font-family: var(--font-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+#global-loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #dc2626, #f97316);
+  z-index: 99999;
+  opacity: 0;
+  transition: width 0.25s ease, opacity 0.3s ease;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+  }
+}

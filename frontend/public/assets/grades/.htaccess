@@ -1,0 +1,4 @@
+# Permite acesso a arquivos de imagem neste diretório (Apache 2.4+)
+<FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
+    Require all granted
+</FilesMatch>

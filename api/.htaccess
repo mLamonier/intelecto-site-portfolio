@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Se a requisição é para um arquivo ou diretório real, não reescreva
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Reescreva todas as requisições para index.php, mantendo a query string
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

@@ -1,0 +1,452 @@
+.order-detail-page {
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.order-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  transition: all 0.2s;
+}
+
+.order-detail-back:hover {
+  color: #1d4ed8;
+  gap: 12px;
+}
+
+.order-detail-header {
+  margin-bottom: 32px;
+}
+
+.order-detail-header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.order-detail-status-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.order-detail-status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+}
+
+.order-detail-status-badge.pendente {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.order-detail-status-badge.pago {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.order-detail-status-badge.cancelado {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.order-detail-info-section {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.order-detail-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.order-detail-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.order-detail-info-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.order-detail-info-value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.order-detail-info-value.price {
+  color: #22c55e;
+  font-size: 1.5rem;
+}
+
+.order-detail-info-value.link {
+  color: #2563eb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.order-detail-info-value.link:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+.order-detail-section {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.order-detail-payment-section {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.order-detail-payment-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 20px 0;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.order-detail-payment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.order-detail-payment-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-detail-payment-badge {
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.order-detail-payment-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.order-detail-payment-badge.approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.order-detail-payment-badge.refused {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.order-detail-payment-empty {
+  margin: 0;
+  color: #6b7280;
+}
+
+.order-detail-access-release {
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #86efac;
+  background: #f0fdf4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-detail-access-release p {
+  margin: 0;
+  color: #166534;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  flex: 1;
+  min-width: 220px;
+}
+
+.order-detail-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 20px 0;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.order-detail-courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-detail-course-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #22c55e;
+  transition: all 0.2s;
+}
+
+.order-detail-course-item:hover {
+  background: #f3f4f6;
+  transform: translateX(4px);
+}
+
+.order-detail-course-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.order-detail-course-hours {
+  font-size: 0.875rem;
+  color: #22c55e;
+  font-weight: 600;
+  background: #f0fdf4;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.order-detail-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.order-detail-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.order-detail-btn-pay {
+  background: #22c55e;
+  color: white;
+}
+
+.order-detail-btn-pay:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.order-detail-btn-disabled,
+.order-detail-btn-disabled:hover {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.order-detail-btn-whatsapp {
+  background: #3b82f6;
+  color: white;
+}
+
+.order-detail-btn-change-method {
+  background: white;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+}
+
+.order-detail-btn-change-method:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.order-detail-btn-whatsapp:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.order-detail-btn-dev-approve {
+  background: #f97316;
+  color: #fff;
+}
+
+.order-detail-btn-dev-approve:hover {
+  background: #ea580c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
+}
+
+.order-detail-timeline {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.order-detail-timeline h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 20px 0;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.order-detail-timeline-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.order-detail-timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 40px;
+  width: 2px;
+  height: calc(100% + 16px);
+  background: #e5e7eb;
+}
+
+.order-detail-timeline-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #22c55e;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #22c55e;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.order-detail-timeline-content h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.order-detail-timeline-content p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .order-detail-header h1 {
+    font-size: 1.875rem;
+  }
+
+  .order-detail-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .order-detail-info-section {
+    padding: 20px;
+  }
+
+  .order-detail-section {
+    padding: 20px;
+  }
+
+  .order-detail-payment-section {
+    padding: 20px;
+  }
+
+  .order-detail-actions {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .order-detail-btn {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-detail-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .order-detail-status-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .order-detail-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-detail-course-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .order-detail-info-section,
+  .order-detail-section,
+  .order-detail-payment-section {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,641 @@
+﻿
+.inline-summary {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+.inline-summary strong {
+  color: #111827;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .action-buttons {
+    flex-direction: row;
+    align-items: center;
+  }
+  .inline-summary {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+.page-grade-detail {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 16px 0;
+  color: #1f2937;
+}
+
+.grade-hero {
+  position: relative;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background: #f3f4f6;
+}
+
+.grade-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grade-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.info-icon {
+  width: 24px;
+  height: 24px;
+  color: #22c55e;
+  flex-shrink: 0;
+}
+
+.info-item strong {
+  color: #1f2937;
+  margin-right: 4px;
+}
+
+.grade-description {
+  margin-bottom: 32px;
+  line-height: 1.6;
+  color: #4b5563;
+  font-size: 16px;
+}
+
+.grade-description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 24px 0 12px 0;
+}
+
+.grade-description h3:first-child {
+  margin-top: 0;
+}
+
+.grade-description p {
+  margin: 0 0 16px 0;
+  line-height: 1.7;
+}
+
+.grade-table-section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.grade-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.grade-table thead {
+  background: #1f2937;
+  color: white;
+}
+
+.grade-table th {
+  padding: 12px 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.grade-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.grade-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.grade-table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #374151;
+  text-align: center;
+}
+
+.btn-assistir,
+.btn-ver {
+  background: #dc2626;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-assistir:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.btn-ver {
+  background: #dc2626;
+}
+
+.btn-ver:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.study-mode-section {
+  margin-bottom: 32px;
+  padding: 24px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.study-mode-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 16px 24px;
+  border: 2px solid #d1d5db;
+  background: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-btn:hover {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+.mode-btn.active {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: white;
+}
+
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan-card {
+  position: relative;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.plan-card:hover {
+  border-color: #22c55e;
+  box-shadow: 0 10px 30px rgba(34, 197, 94, 0.15);
+  transform: translateY(-2px);
+}
+
+.plan-card.active {
+  border-color: #22c55e;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+  box-shadow: 0 12px 36px rgba(34, 197, 94, 0.25);
+}
+
+.plan-card.active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #22c55e;
+  border-radius: 12px 0 0 12px;
+}
+
+.plan-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.plan-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.plan-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
+}
+
+.plan-badge.popular {
+  background: #fef08a;
+  color: #991b1b;
+}
+
+.plan-badge.best {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.plan-badge.benefit {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.plan-price {
+  margin-bottom: 16px;
+}
+
+.main-price {
+  font-size: 32px;
+  font-weight: 800;
+  color: #22c55e;
+  margin: 0 0 4px 0;
+}
+
+.sub-price {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.tax-info {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.plan-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plan-benefits li {
+  font-size: 15px;
+  color: #374151;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.check-icon {
+  color: #22c55e;
+  flex-shrink: 0;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.buy-btn {
+  width: 100%;
+  background: #22c55e;
+  color: white;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buy-btn:hover {
+  background: #16a34a;
+}
+
+.buy-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.whatsapp-action-btn {
+  width: 100%;
+  background: #3b82f6;
+  color: white;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  line-height: 1;
+}
+
+.whatsapp-action-btn:hover {
+  background: #2563eb;
+}
+
+.whatsapp-action-btn svg {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .grade-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .study-mode-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .plan-header h3 {
+    flex: 0 0 100%;
+  }
+
+  .plan-header .plan-badge {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  
+  .desktop-only {
+    display: none !important;
+  }
+
+  
+  .mobile-only {
+    display: flex !important;
+  }
+}
+
+.mobile-only {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grade-course-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.grade-course-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.grade-course-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  flex: 1;
+}
+
+.grade-course-hours {
+  font-size: 14px;
+  font-weight: 600;
+  color: #22c55e;
+  background: #f0fdf4;
+  padding: 4px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.grade-course-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grade-action-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.grade-action-label {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+  flex: 1;
+}
+
+.no-content {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.related-grades-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  max-width: 100vw;
+  margin-top: 40px;
+  padding: 36px 0 24px;
+  background: var(--bg-red-pattern) center/cover no-repeat;
+}
+
+.related-grades-section .section-title {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+
+.related-grades-swiper {
+  width: 100%;
+  padding: 16px 0 22px;
+}
+
+.related-grades-swiper .swiper-slide {
+  width: 300px;
+}
+
+.related-grade-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.related-grade-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(220, 38, 38, 0.15);
+}
+
+.related-grade-thumb {
+  width: 100%;
+  height: 170px;
+  background: #f3f4f6;
+}
+
+.related-grade-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.related-grade-info {
+  padding: 12px;
+}
+
+.related-grade-title {
+  margin: 0 0 8px;
+  color: #1f2937;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.related-grade-desc {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.related-empty {
+  margin: 0;
+  color: #6b7280;
+}
+
+.custom-grade-cta-section {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  padding: 24px;
+  background: var(--bg-white-pattern) center/cover no-repeat;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.custom-grade-cta-btn {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.custom-grade-cta-btn:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .related-grades-section {
+    padding: 28px 0 18px;
+  }
+
+  .related-grades-swiper .swiper-slide {
+    width: 220px;
+  }
+
+  .related-grade-thumb {
+    height: 140px;
+  }
+
+  .custom-grade-cta-section {
+    padding: 18px;
+  }
+}
