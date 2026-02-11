@@ -202,5 +202,8 @@ Este diretório de portfólio foi preparado para repositório público:
 - não inclui chaves/tokens de produção
 - inclui apenas arquivos de exemplo (`.env.example`)
 
+## Licenca
+Este projeto esta licenciado sob a licenca MIT. Veja o arquivo `LICENSE`.
+
 ## Sobre o autor
 Projeto desenvolvido por **Miguel Lamonier**.
